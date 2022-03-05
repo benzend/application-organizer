@@ -1,6 +1,4 @@
 class WordsController < ApplicationController
-  :has_many translations
-
   def index
     @words = Word.all
   end
