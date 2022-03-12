@@ -1,17 +1,19 @@
-<h1>My Applications</h1>
+<div class="max-w-lg">
+  <h1>My Applications</h1>
 
-<div>
-  <% @apps.each do |app| %>
-    <a href="/apps/<%= app.id %>">
-      <div>
-        <h4><%= app.title %></h4>
-        <p><%= app.description %></p>
-      </div>
-    </a>
-  <% end %>
+  <div class="apps__container">
+    <% @apps.each do |app| %>
+      <a href="/apps/<%= app.id %>">
+        <div class="apps__apps-container">
+          <h4><%= app.title %></h4>
+          <p><%= app.description %></p>
+        </div>
+      </a>
+    <% end %>
 
-  <% if @apps.empty? %>
-    <p>You have no applications, you can create one here:</p>
-  <% end %>
-  <button><%= link_to "Add Application", new_app_path %></button>
+    <% if @apps.empty? %>
+      <p>You have no applications, you can create one here:</p>
+    <% end %>
+    <button class="apps__add-new-button"><%= link_to "Add Application", new_app_path %></button>
+  </div>
 </div>
