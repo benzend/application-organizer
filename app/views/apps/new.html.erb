@@ -1,0 +1,25 @@
+<%= form_with model: @app do |form| %>
+  <div>
+    <%= form.label :title %><br>
+    <%= form.text_field :title %>
+  </div>
+
+  <div>
+    <%= form.label :description %><br>
+    <%= form.text_area :description %>
+  </div>
+
+  <div>
+    <%= form.label :industry %><br>
+    <%= form.text_field :industry %>
+  </div>
+
+  <div>
+    <%= form.label :repo_location %><br>
+    <%= form.text_field :repo_location %>
+  </div>
+
+  <div>
+    <%= form.submit %>
+  </div>
+<% end %>

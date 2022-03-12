@@ -11,6 +11,7 @@
   <% end %>
 
   <% if @apps.empty? %>
-    <p>You have no applications</p>
+    <p>You have no applications, you can create one here:</p>
+    <button><%= link_to "Add Application", new_app_path %></button>
   <% end %>
 </div>
