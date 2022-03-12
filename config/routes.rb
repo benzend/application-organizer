@@ -1,3 +1,3 @@
 Rails.application.routes.draw do
-  root "translations#index"
+  get "/apps", to: "apps#index"
 end

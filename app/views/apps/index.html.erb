@@ -1,0 +1,12 @@
+<h1>My Applications</h1>
+
+<div>
+  <% @apps.each do |app| %>
+    <a href="/apps/<%= app.id %>">
+      <div>
+        <h4><%= app.title %></h4>
+        <p><%= app.description %></p>
+      </div>
+    </a>
+  <% end %>
+</div>
