@@ -1,8 +1,19 @@
-.apps__app-container {
-  display: flex;
-  align-items: center;
-  background-color: $primary-color;
-  border-radius: 0.2rem;
-  padding: 0.8rem 0.8rem;
-  margin-bottom: 0.3rem;
+.apps {
+  &__app-container {
+    transition: transform 0.3s;
+    position: relative;
+    display: flex;
+    align-items: center;
+    background-color: $primary-color;
+    border-radius: 0.2rem;
+    padding: 0.8rem 0.8rem;
+    margin-bottom: 0.6rem;
+    box-shadow: 4px 4px 4px #0003;
+    &__title {
+      color: $primary-font-color;
+    }
+    &:hover {
+      transform: translateX(-10px);
+    }
+  }
 }

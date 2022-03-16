@@ -1,0 +1,17 @@
+.apps {
+  &__title {
+    margin-bottom: 1rem;
+  }
+  &__add-new-button {
+    transition: box-shadow 0.3s;
+    padding: 0.3rem 0.5rem;
+    background-color: transparent;
+    border: 1px solid black;
+    border-radius: 0.2rem;
+    margin-top: 1rem;
+    cursor: pointer;
+    &:hover {
+      box-shadow: 2px 2px 5px #0002;
+    }
+  }
+}
