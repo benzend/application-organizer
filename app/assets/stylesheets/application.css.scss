@@ -2,10 +2,10 @@
 *= require_self
 */
 
-@import 'base/reset.scss';
+@import 'base/reset';
 
-@import 'helpers/globals.scss';
-@import 'helpers/utils.scss';
+@import 'helpers/globals';
+@import 'helpers/utils';
 
-@import 'components/apps.scss';
-@import 'components/app-container.scss';
+@import 'components/apps';
+@import 'components/app-container';

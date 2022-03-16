@@ -20,15 +20,4 @@ ActiveRecord::Schema[7.0].define(version: 2022_03_12_084851) do
     t.string "repo_location"
   end
 
-  create_table "palabras", force: :cascade do |t|
-    t.text "translations"
-    t.datetime "created_at", null: false
-    t.datetime "updated_at", null: false
-  end
-
-  create_table "translations", force: :cascade do |t|
-    t.datetime "created_at", null: false
-    t.datetime "updated_at", null: false
-  end
-
 end
